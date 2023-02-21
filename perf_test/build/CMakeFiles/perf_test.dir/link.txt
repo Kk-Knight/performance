@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -g -rdynamic -O3 -DNDEBUG -pthread CMakeFiles/perf_test.dir/perf_test.cpp.o CMakeFiles/perf_test.dir/src/clock.cpp.o -o ../output/bin/perf_test  -lrt -lpthread 
