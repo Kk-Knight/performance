@@ -1,3 +1,0 @@
-/home/genius/Code/perf_test/build/CMakeFiles/perf_test.dir
-/home/genius/Code/perf_test/build/CMakeFiles/edit_cache.dir
-/home/genius/Code/perf_test/build/CMakeFiles/rebuild_cache.dir
