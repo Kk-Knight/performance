@@ -1,4 +1,4 @@
 *.o
 .vscode
-./build
-./ouput
+./perf_test/build
+./perf_test/ouput

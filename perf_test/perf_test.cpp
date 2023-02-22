@@ -2,7 +2,7 @@
  * @Author: Kk-knight liubin999000@163.com
  * @Date: 2023-02-21 21:10:07
  * @LastEditors: liuyanbin liuyanbin@maxieyetech.com
- * @LastEditTime: 2023-02-22 12:27:19
+ * @LastEditTime: 2023-02-22 13:20:09
  * @FilePath: /performance/perf_test/perf_test.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置
  * 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
@@ -25,7 +25,7 @@ int CalculatFunc() {
     uint64_t count = UINT64_MAX;
     int a = rand() % 20000;
     int b = rand() % 10000;
-    Clock clock;
+    Clock clock(REAL_TIMER | CPU_TIMER | THREAD_TIMER);
 
     clock.Start();
     for (uint64_t i = 0; i < count; i++) {
@@ -41,7 +41,7 @@ int SleepFunc(int sleep_ms) {
     uint64_t count = UINT64_MAX;
     int a = rand() % 20000;
     int b = rand() % 10000;
-    Clock clock;
+    Clock clock(REAL_TIMER | CPU_TIMER | THREAD_TIMER);
 
     std::cout << "sleep time = " << sleep_ms << "ms" << std::endl;
     clock.Start();
@@ -61,7 +61,7 @@ int NanosleepFunc(int sleep_ms) {
     uint64_t count = UINT64_MAX;
     int a = rand() % 20000;
     int b = rand() % 10000;
-    Clock clock;
+    Clock clock(REAL_TIMER | CPU_TIMER | THREAD_TIMER);
 
     std::cout << "sleep time = " << sleep_ms << "ms" << std::endl;
     clock.Start();
@@ -84,7 +84,7 @@ int MultiTHreadFunc() {
     uint64_t count = UINT64_MAX;
     int a = rand() % 20000;
     int b = rand() % 10000;
-    Clock clock;
+    Clock clock(REAL_TIMER | CPU_TIMER | THREAD_TIMER);
 
     clock.Start();
 
